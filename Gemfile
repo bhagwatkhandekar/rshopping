@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.0.6"
 
+gem 'sassc-rails'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.8", ">= 7.0.8.4"
 
@@ -50,6 +51,14 @@ gem "bootsnap", require: false
 
 # awesome_print gem for display thep retty view and clean data on console. 
 gem 'awesome_print', '~> 1.8', require: 'ap'
+
+#devise gem for login functionality
+gem 'devise'
+
+#bootstrap gem for UI 
+gem 'bootstrap', '~> 5.3.3'
+gem 'autoprefixer-rails'
+gem 'jquery-rails'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
