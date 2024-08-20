@@ -10,7 +10,7 @@ ActiveAdmin.register Product do
   # or
   #
   permit_params do
-    permitted = [:name, :description, :price, :email]
+    permitted = [:name, :description, :price, :email, :image]
     permitted << :other if params[:action] == 'create' && current_admin_user.present?
     permitted
   end
@@ -25,6 +25,8 @@ ActiveAdmin.register Product do
     end
     column :email
     column " Product Created Date", :created_at
+    column :image
+    actions
   end
   
 end
