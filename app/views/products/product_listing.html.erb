@@ -6,7 +6,6 @@
       <th>Name</th>
       <th>Description</th>
       <th>Price</th>
-      <th>Email</th>
       <th>Image</th>
       <th colspan="2"></th>
     </tr>
@@ -17,7 +16,6 @@
         <td><%= product.name %></td>
         <td><%= product.description %></td>
         <td><%= number_to_currency(product.price) %></td>
-        <td><%= product.email %></td>
         <td><%= image_tag product.image_url, height: '50', width: '100' %></td>
       </tr>
     <% end %>
